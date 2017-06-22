@@ -1,2 +1,2 @@
 # nolock.github.io
-Unsere Website
+Die Website unseres Projekts.
