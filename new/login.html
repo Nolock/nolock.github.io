@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Einloggen</title>
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" id="bulma" href="css/bulma.css">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+
+  <style>
+    @media screen and (max-height: 650px) {
+      body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+    }
+
+    @media screen and (min-height: 651px) {
+      body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+    }
+
+
+    .button.is-google {
+      background-color: transparent;
+      border-color: #d34836;
+      color: #d34836;
+    }
+
+    .button.is-google:hover,
+    .button.is-google.is-hovered {
+      background-color: #d34836;
+      border-color: transparent;
+      color: #fff;
+    }
+
+    .button.is-google:focus,
+    .button.is-google.is-focused {
+      background-color: #d34836;
+      border-color: transparent;
+      -webkit-box-shadow: 0 0 0.5em rgba(216, 95, 79, 0.25);
+      box-shadow: 0 0 0.5em rgba(216, 95, 79, 0.25);
+      color: #fff;
+    }
+
+    .button.is-google:active,
+    .button.is-google.is-active {
+      background-color: #d34836;
+      border-color: transparent;
+      -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
+      box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.3);
+      color: #fff;
+    }
+
+
+    hr {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #logo {
+      margin-bottom: 12px;
+    }
+
+    a, button, p {
+      -webkit-tap-highlight-color: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-wrapper columns">
+    <div class="column is-8 is-hidden-touch hero-banner">
+      <section class="hero is-fullheight is-dark">
+        <div class="hero-body">
+          <div class="container section">
+            <div class="has-text-right">
+              <h1 class="title is-1">Einloggen</h1> <br>
+              <p class="title is-3">Sicherer Benutzerlogin</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <div class="column is-4">
+      <section class="hero is-fullheight">
+        <div class="hero-heading">
+          <div class="section has-text-centered">
+            <img id="logo" src="img/bulma-logo.png" alt="Bulma logo" width="150px">
+          </div>
+        </div>
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-8 is-offset-2">
+                <h1 class="avatar has-text-centered section">
+                  <img src="img/icon.png">
+                </h1>
+                <div class="login-form">
+                  <p class="control has-icon has-icon-right">
+                    <input class="input email-input" placeholder="Benutzername oder Email" type="text" style="padding-right:0;">
+                    <span class="icon user">
+                      <i class="fa fa-user"></i>
+                    </span>
+                  </p>
+                  <p class="control has-icon has-icon-right">
+                    <input class="input password-input" placeholder="●●●●●●●●●●●●" type="password">
+                    <span class="icon user">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                  </p>
+                  <p class="control login">
+                    <button class="button is-success is-outlined is-large is-fullwidth">Einloggen</button>
+                  </p>
+                  <hr>
+                  <p class="control login" style="padding-top:0px;">
+                    <button class="button is-google is-outlined is-large is-fullwidth">Google+</button>
+                  </p>
+                </div>
+                <div class="section forgot-password">
+                  <p class="has-text-centered">
+                    <a href="main.html">Passwort vergessen</a>
+                    <a href="signup.html">Registrieren</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+
+</html>
