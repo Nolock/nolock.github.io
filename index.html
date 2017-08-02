@@ -2,7 +2,9 @@
 <html lang=de>
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
   <style>
     html {
       height: 100%;
@@ -17,12 +19,27 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-family: 'Zilla Slab Highlight', cursive;
     }
 
     h1 {
-      font-size: 5em;
+      font-size: 15vh;
       color: white;
+      margin-top: 0;
+      font-family: 'Neucha', cursive;
+    }
+
+    div {
+      font-size: 8vh;
+      color: white;
+      font-family: 'Permanent Marker', cursive;
+      text-align: center;
+    }
+
+    #typewriter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
   </style>
 </head>
@@ -31,7 +48,7 @@
   <div id="typewriter"></div>
 
   <script>
-    var str = "<h1>Nolock</h1>",
+    var str = "<h1>Nolock</h1><div>von Florian, Jonas und Simon</div>",
       i = 0,
       isTag,
       text;
